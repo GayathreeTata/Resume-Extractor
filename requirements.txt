@@ -3,6 +3,3 @@ spacy
 pdfminer.six
 pymupdf
 python-dotenv
-
-spacy==3.7.2
-
