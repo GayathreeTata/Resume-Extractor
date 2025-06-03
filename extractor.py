@@ -1,9 +1,9 @@
 import re
 import fitz  # PyMuPDF
 import spacy
-
 import spacy.cli
-
+spacy.cli.download("en_core_web_sm")  # This line ensures the model is downloaded
+import spacy
 nlp = spacy.load("en_core_web_sm")
 
 def extract_text_from_pdf(pdf_file):
