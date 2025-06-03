@@ -5,5 +5,4 @@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0
 pdfminer.six
 pymupdf
 python-dotenv
-streamlit-extras
 
