@@ -45,6 +45,5 @@ def extract_all(pdf_path):
         "phone": extract_phone(text),
         "skills": extract_skills(text),
         "experience": extract_experience(text),
-        "certifications": extract_certifications(text)  
 
     }
