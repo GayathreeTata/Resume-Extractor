@@ -35,6 +35,21 @@ def extract_skills(text):
 def extract_experience(text):
     exp = re.findall(r'(?i)(\d+)\+?\s?(years|yrs) of experience', text)
     return exp[0][0] + " years" if exp else None
+def extract_certifications(text: str):
+    import re
+
+    cert_keywords = [
+        "certified", "certificate", "certification", "AWS Certified",
+        "Google Cloud Certified", "Microsoft Certified", "Coursera", "Udemy", "edX"
+    ]
+
+    lines = text.split('\n')
+    certifications = []
+    for line in lines:
+        if any(keyword.lower() in line.lower() for keyword in cert_keywords):
+            certifications.append(line.strip())
+
+    return certifications
 
 def extract_all(pdf_path):
     text = extract_text_from_pdf(pdf_path)
@@ -44,4 +59,6 @@ def extract_all(pdf_path):
         "phone": extract_phone(text),
         "skills": extract_skills(text),
         "experience": extract_experience(text),
+        "certifications": extract_certifications(text)  
+
     }
