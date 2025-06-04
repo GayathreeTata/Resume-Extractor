@@ -155,10 +155,7 @@ def generate_summary(data: dict) -> str:
     if skills:
         summary_parts.append(f"🧠 **Skills**: {', '.join(skills)}")
     certifications = data.get("certifications")
-    if certifications:
-        cert_summaries = "\n- ".join(certifications)
-        summary_parts.append(f"📜 **Certifications**:\n- {cert_summaries}")
-
+    
 
     experience = data.get("experience")
     if experience:
