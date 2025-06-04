@@ -210,28 +210,25 @@ if uploaded_file:
 
         # Save results to JSON
         # Save results to JSON file
-json_path = "data/results.json"
-if os.path.exists(json_path):
-    with open(json_path, "r") as f:
-        all_results = json.load(f)
-else:
-    all_results = []
-
-all_results.append(result)
-
-with open(json_path, "w") as f:
-    json.dump(all_results, f, indent=2)
-
-# ✅ Show success
-st.success("💾 Data saved successfully to results.json!")
+        json_path = "data/results.json"
+        if os.path.exists(json_path):
+            with open(json_path, "r") as f:
+                all_results = json.load(f)
+        else:
+            all_results = []
+            all_results.append(result)
+            with open(json_path, "w") as f:
+                json.dump(all_results, f, indent=2)
+                # ✅ Show success
+                st.success("💾 Data saved successfully to results.json!")
 
 # 📥 Provide download option for current result
-st.download_button(
-    label="📥 Download Extracted Result (JSON)",
-    data=json.dumps(result, indent=2),
-    file_name="extracted_resume.json",
-    mime="application/json"
-)
+        st.download_button(
+            label="📥 Download Extracted Result (JSON)",
+            data=json.dumps(result, indent=2),
+            file_name="extracted_resume.json",
+            mime="application/json"
+        )
 
 
     except Exception as e:
