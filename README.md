@@ -21,11 +21,11 @@ Display extracted data on a clean UI
 Powered by spaCy NLP and custom extraction logic
 
 #🛠️ Tech Stack
-Python 3.10
-Streamlit
-spaCy
-PyMuPDF / pdfminer / poppler-utils (for PDF parsing)
-Docker (for containerization)
+Python 3.10, 
+Streamlit,
+spaCy,
+PyMuPDF / pdfminer / poppler-utils (for PDF parsing),
+Docker (for containerization).
 
 👤 Author
 Gayathree Tata
