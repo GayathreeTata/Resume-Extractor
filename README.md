@@ -1,9 +1,9 @@
 # Resume-Extractor
 An AI-powered web application to extract relevant skills, entities, and a summary from uploaded resumes using Natural Language Processing (NLP) techniques. Built with Python, Streamlit, and spaCy.
 This tool helps you:
-🔍 Extract structured data from your resume
-🧠 Auto-generate a descriptive summary
-💾 Save and view results
+#🔍 Extract structured data from your resume
+#🧠 Auto-generate a descriptive summary
+#💾 Save and view results
 
 # 🚀 Features
 Upload resume in PDF format
