@@ -8,14 +8,14 @@ This tool helps you:
 # 🚀 Features
 Upload resume in PDF format
 Extraction Details:
-📝Name
-📞Phone no
-✉️Email
-💡Skills[upto 6 skills]
-💼Experience
-🔍Summary
-✅Overview of Resume
-💾Download button
+# 📝Name
+# 📞Phone no
+# ✉️Email
+# 💡Skills[upto 6 skills]
+# 💼Experience
+# 🔍Summary
+# ✅Overview of Resume
+# 💾Download button
 
 Display extracted data on a clean UI
 Powered by spaCy NLP and custom extraction logic
